@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="783.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #BCC9CC;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/5-stars.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/welcome-back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="543.0" prefWidth="624.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="122.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/padlock.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="100.0" layoutY="213.0" text="Username">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="100.0" layoutY="275.0" text="Password">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordtxt" layoutX="217.0" layoutY="275.0" prefWidth="250.0" promptText="Password" />
+            <Button fx:id="loginbtn" alignment="CENTER" layoutX="164.0" layoutY="375.0" mnemonicParsing="false" onAction="#loginbtnOnAction" prefWidth="240.0" style="-fx-background-color: #3d4b66;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelbtn" alignment="CENTER" layoutX="164.0" layoutY="421.0" mnemonicParsing="false" onAction="#cancelbButtonOnAction" prefWidth="240.0" style="-fx-background-color: #3d4b66;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="usernametxt" layoutX="217.0" layoutY="214.0" prefHeight="26.0" prefWidth="250.0" promptText="Username" />
+            <Label fx:id="loginmsg" alignment="CENTER" layoutX="144.0" layoutY="330.0" prefHeight="26.0" prefWidth="280.0" textFill="#dd1818">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="124.0" fitWidth="134.0" layoutX="222.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/lock.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

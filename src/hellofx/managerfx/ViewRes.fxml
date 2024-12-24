@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.managerfx.ManagerResController">
+   <left>
+      <VBox prefHeight="543.0" prefWidth="228.0" style="-fx-background-color: #3d4b66;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="111.0" prefWidth="228.0" style="-fx-background-color: #38455c;">
+               <children>
+                  <Label alignment="CENTER" layoutX="73.0" layoutY="39.0" prefHeight="50.0" prefWidth="134.0" text="The Hotel" textFill="WHITE">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="74.0" fitWidth="65.0" layoutX="8.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/stars.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="addbtn" mnemonicParsing="false" onAction="#addbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Add New Account" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="editbtn" mnemonicParsing="false" onAction="#editbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Edit Existing Account" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="displayempbtn" mnemonicParsing="false" onAction="#displayempbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Display All Employees" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="displayresbtn" mnemonicParsing="false" onAction="#displayresbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Display All Residents" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="displayroombtn" mnemonicParsing="false" onAction="#displayroombtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Display All Rooms" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="revenuebtn" mnemonicParsing="false" onAction="#revenuebtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Hotel Revenue" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="logoutbtn" mnemonicParsing="false" onAction="#logoutbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #303b4c;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="cancelbtn" mnemonicParsing="false" onAction="#cancelbButtonOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #222a39;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <AnchorPane prefHeight="543.0" prefWidth="622.0" style="-fx-background-color: #909eab;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="restable" layoutY="106.0" prefHeight="437.0" prefWidth="621.0" style="-fx-background-color: #909eab;">
+              <columns>
+                <TableColumn fx:id="idcolres" prefWidth="41.0" text="ID" />
+                <TableColumn fx:id="namecolres" prefWidth="115.0" text="Name" />
+                <TableColumn fx:id="durationcol" prefWidth="84.0" text="Duration" />
+                <TableColumn fx:id="servicecol" prefWidth="129.0" text="Service" />
+                <TableColumn fx:id="typecolres" prefWidth="82.0" text="Room Type" />
+                  <TableColumn fx:id="boardingcolres" prefWidth="75.0" text="Boarding" />
+                  <TableColumn fx:id="contactcolres" prefWidth="94.0" text="Contact" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="90.0" fitWidth="156.0" layoutX="266.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/table.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="dispbtnres" alignment="CENTER" layoutY="71.0" mnemonicParsing="false" onAction="#dispbtnresOnAction" prefHeight="35.0" prefWidth="177.0" style="-fx-background-color: #222a39;" text="Display All Residents" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+   </BorderPane>

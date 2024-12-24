@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.managerfx.ManagerController">
+   <left>
+      <VBox prefHeight="543.0" prefWidth="228.0" style="-fx-background-color: #3d4b66;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="111.0" prefWidth="228.0" style="-fx-background-color: #38455c;">
+               <children>
+                  <Label alignment="CENTER" layoutX="73.0" layoutY="39.0" prefHeight="50.0" prefWidth="134.0" text="The Hotel" textFill="WHITE">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="74.0" fitWidth="65.0" layoutX="8.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/stars.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="addbtn" mnemonicParsing="false" onAction="#addbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Add New Account" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="editbtn" mnemonicParsing="false" onAction="#editbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Edit Existing Account" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="displayempbtn" mnemonicParsing="false" onAction="#displayempbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Display All Employees" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="displayresbtn" mnemonicParsing="false" onAction="#displayresbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Display All Residents" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="displayroombtn" mnemonicParsing="false" onAction="#displayroombtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Display All Rooms" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="revenuebtn" mnemonicParsing="false" onAction="#revenuebtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #38455c;" text="Hotel Revenue" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="logoutbtn" mnemonicParsing="false" onAction="#logoutbtnOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #303b4c;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="cancelbtn" mnemonicParsing="false" onAction="#cancelbButtonOnAction" prefHeight="54.0" prefWidth="228.0" style="-fx-background-color: #222a39;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <AnchorPane prefHeight="543.0" prefWidth="622.0" style="-fx-background-color: #909eab;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="236.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/mat.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="427.0" fitWidth="575.0" layoutX="24.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/8813386.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
