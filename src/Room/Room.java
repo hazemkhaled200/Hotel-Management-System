@@ -8,12 +8,12 @@ public class Room {
     public double price;
     public int id, res_id, emp_id;
 
-    public void info() {
-        System.out.println("Room Type: " + roomType);
-        System.out.println("Boarding Options: " + boardingOption);
-        System.out.println("Is Available: " + isAvailable);
-        System.out.println("Price: " + price);
-    }
+    // public void info() {
+    // System.out.println("Room Type: " + roomType);
+    // System.out.println("Boarding Options: " + boardingOption);
+    // System.out.println("Is Available: " + isAvailable);
+    // System.out.println("Price: " + price);
+    // }
 
     public void setRoomType() {
 
